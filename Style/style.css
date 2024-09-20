@@ -150,7 +150,7 @@ header {
 }
 
 .navbarr {
-  display: flex;
+  display: none;
 }
 
 .navbarr a {
@@ -475,5 +475,8 @@ p.label {
   }
   .navbarr {
     display: none;
+  }
+  menu.menu.navbarr.open {
+    display: block !important;
   }
 }
