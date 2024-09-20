@@ -480,4 +480,17 @@ p.label {
   div#lood {
     display: flex !important;
   }
+  div#lood {
+    justify-content: center;
+    align-items: center;
+    background: #ceecf9;
+  }
+  div#lood .loader {
+    height: 20vh !important;
+    border-radius: 100px 100px !important;
+    -webkit-border-radius: 100px 100px !important;
+    -moz-border-radius: 100px 100px !important;
+    -ms-border-radius: 100px 100px !important;
+    -o-border-radius: 100px 100px !important;
+  }
 }
