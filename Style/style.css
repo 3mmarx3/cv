@@ -476,7 +476,8 @@ p.label {
   .navbarr {
     display: none;
   }
-  menu.menu.navbarr.open {
-    display: block !important;
+
+  div#lood {
+    display: flex !important;
   }
 }
