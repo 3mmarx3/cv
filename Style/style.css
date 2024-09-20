@@ -102,6 +102,22 @@ body a {
 }
 
 /*  */
+
+.menu {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 99999;
+  background: white;
+  position: fixed;
+  z-index: 9999999999;
+}
+
+i#menu-icon {
+  position: relative;
+  z-index: 99999999999999999999;
+}
+
 header {
   width: 100%;
   top: 0;
@@ -197,7 +213,7 @@ header {
   #menu-icon {
     display: block;
   }
-  .navbarr {
+  /* .navbarr {
     position: absolute;
 
     width: 100%;
@@ -206,7 +222,7 @@ header {
 
     transition: all 0.5s ease;
     display: none;
-  }
+  } */
 
   .navbarr a {
     display: block;
@@ -225,9 +241,8 @@ header {
     color: wheat;
   }
 
-  .navbarr.open {
-    right: 2%;
-    display: block;
+  menu.menu.navbarr.open {
+    display: block !important;
   }
 
   .logo img {
@@ -319,6 +334,7 @@ p.label {
   font-size: 11px;
   line-height: 13px;
   color: #5f6368;
+  margin: 10px 0;
 }
 
 .results .entry {
@@ -456,5 +472,8 @@ p.label {
   }
   .card {
     padding-bottom: 10vh;
+  }
+  .navbarr {
+    display: none;
   }
 }
