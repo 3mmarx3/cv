@@ -28,7 +28,7 @@ body a {
 
 .loader {
   width: 160px;
-  height: 25vh;
+  height: 20vh;
   position: relative;
   background: #fff;
   border-radius: 100px 100px 0 0;
@@ -416,10 +416,9 @@ p.label {
   display: flex;
   align-items: center;
   gap: 25px;
-  margin-top: 10px;
+  margin-top: 10vh;
   padding: 0 7px;
   background: #f8f8f8;
-  position: fixed;
   bottom: 0;
   width: 100%;
 }
@@ -460,9 +459,7 @@ p.label {
   .load {
     display: none !important;
   }
-  .card {
-    padding-bottom: 10vh;
-  }
+
   .navbarr {
     display: none;
   }

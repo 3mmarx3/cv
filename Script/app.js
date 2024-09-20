@@ -7,3 +7,9 @@ menu.onclick = () => {
 };
 
 //
+
+let Quit = document.getElementById("Quit");
+
+Quit.addEventListener("click", function () {
+  window.close();
+});
