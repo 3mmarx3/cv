@@ -454,4 +454,7 @@ p.label {
   .load {
     display: none !important;
   }
+  .card {
+    padding-bottom: 10vh;
+  }
 }
