@@ -212,16 +212,6 @@ header {
   #menu-icon {
     display: block;
   }
-  /* .navbarr {
-    position: absolute;
-
-    width: 100%;
-    height: 100vh;
-    background-color: var(--main-color);
-
-    transition: all 0.5s ease;
-    display: none;
-  } */
 
   .navbarr a {
     display: block;
@@ -495,30 +485,14 @@ p.label {
     transition: opacity 0.25s ease;
     outline: none;
     border: none;
-    -webkit-transition: right 0.6s ease;
-    -moz-transition: right 0.6s ease;
-    -ms-transition: right 0.6s ease;
-    -o-transition: right 0.6s ease;
   }
   div#lood {
     justify-content: center;
     align-items: center;
     background: #ceecf9;
   }
-  /* div#lood .loader {
-    height: 20vh !important;
-    border-radius: 100px 100px !important;
-    -webkit-border-radius: 100px 100px !important;
-    -moz-border-radius: 100px 100px !important;
-    -ms-border-radius: 100px 100px !important;
-    -o-border-radius: 100px 100px !important;
-  } */
 
   div#lood .loader {
     border-radius: 100px 100px 10px 10px !important;
-    -webkit-border-radius: 100px 100px 10px 10px !important;
-    -moz-border-radius: 100px 100px 10px 10px !important;
-    -ms-border-radius: 100px 100px 10px 10px !important;
-    -o-border-radius: 100px 100px 10px 10px !important;
   }
 }
