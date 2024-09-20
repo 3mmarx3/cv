@@ -16,9 +16,7 @@
 
 body,
 html {
-  height: 100vh;
   font-family: sans-serif;
-  overflow: hidden;
 }
 
 body a {
