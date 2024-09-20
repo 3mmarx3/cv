@@ -512,4 +512,12 @@ p.label {
     -ms-border-radius: 100px 100px !important;
     -o-border-radius: 100px 100px !important;
   } */
+
+  div#lood .loader {
+    border-radius: 100px 100px 10px 10px !important;
+    -webkit-border-radius: 100px 100px 10px 10px !important;
+    -moz-border-radius: 100px 100px 10px 10px !important;
+    -ms-border-radius: 100px 100px 10px 10px !important;
+    -o-border-radius: 100px 100px 10px 10px !important;
+  }
 }
