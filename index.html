@@ -2,1188 +2,545 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>vCard - Personal Portfolio</title>
-
-    <!--
-    - favicon
-  -->
+    <title>Document</title>
+    <link rel="stylesheet" href="./Style/style.css" />
     <link
-      rel="shortcut icon"
-      href="./assets/images/logo.ico"
-      type="image/x-icon"
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
     />
-
-    <!--
-    - custom css link
-  -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
-
-    <!--
-    - google font link
-  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
   </head>
-
   <body>
-    <!--
-    - #MAIN
-  -->
-
     <main>
-      <!--
-      - #SIDEBAR
-    -->
+      <header>
+        <a href="" class="logo">
+          <span>Shenlik Tech.</span>
+        </a>
 
-      <aside class="sidebar" data-sidebar>
-        <div class="sidebar-info">
-          <figure class="avatar-box">
-            <img
-              src="./assets/images/my-avatar.png"
-              alt="Richard hanrick"
-              width="80"
-            />
-          </figure>
+        <ul class="navbarr">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
 
-          <div class="info-content">
-            <h1 class="name" title="Richard hanrick">Richard hanrick</h1>
+        <div class="mainn">
+          <a href="https://www.instagram.com/" class="instagram">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/" class="linkedin">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="https://www.behance.com/" class="behance">
+            <i class="bi bi-behance"></i>
+          </a>
+          <!-- تم تعديل العنصر من <bi> إلى <i> -->
+          <i class="bi bi-list" id="menu-icon"></i>
+        </div>
+      </header>
 
-            <p class="title">Web developer</p>
+      <!--  -->
+
+      <div
+        class="flex flex-col gap-2 dark:text-white w-full dark:bg-neutral-900 p-5 rounded-md hover:scale-105 hover:duration-150 duration-150"
+      >
+        <div class="flex flex-row justify-between w-full">
+          <div class="flex flex-row justify-between w-full">
+            <div
+              class="bg-gray-200 dark:bg-neutral-700 rounded-md w-20 h-4 animate-pulse"
+            ></div>
+            <div
+              class="bg-gray-200 dark:bg-neutral-700 rounded-md w-10 animate-pulse"
+            ></div>
           </div>
+        </div>
+        <div class="flex flex-row justify-between w-full">
+          <div
+            class="bg-gray-200 dark:bg-neutral-700 rounded-md w-40 animate-pulse"
+          ></div>
 
-          <button class="info_more-btn" data-sidebar-btn>
-            <span>Show Contacts</span>
+          <div class="text-xs">
+            <div class="flex flex-row">
+              <svg
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                class="h-4 w-4 text-yellow-400"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.049 2.927c.3-.916 1.603-.916 1.902 0l1.286 3.953a1.5 1.5 0 001.421 1.033h4.171c.949 0 1.341 1.154.577 1.715l-3.38 2.458a1.5 1.5 0 00-.54 1.659l1.286 3.953c.3.916-.757 1.67-1.539 1.145l-3.38-2.458a1.5 1.5 0 00-1.76 0l-3.38 2.458c-.782.525-1.838-.229-1.539-1.145l1.286-3.953a1.5 1.5 0 00-.54-1.659l-3.38-2.458c-.764-.561-.372-1.715.577-1.715h4.171a1.5 1.5 0 001.421-1.033l1.286-3.953z"
+                ></path>
+              </svg>
+              <svg
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                class="h-4 w-4 text-yellow-400"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.049 2.927c.3-.916 1.603-.916 1.902 0l1.286 3.953a1.5 1.5 0 001.421 1.033h4.171c.949 0 1.341 1.154.577 1.715l-3.38 2.458a1.5 1.5 0 00-.54 1.659l1.286 3.953c.3.916-.757 1.67-1.539 1.145l-3.38-2.458a1.5 1.5 0 00-1.76 0l-3.38 2.458c-.782.525-1.838-.229-1.539-1.145l1.286-3.953a1.5 1.5 0 00-.54-1.659l-3.38-2.458c-.764-.561-.372-1.715.577-1.715h4.171a1.5 1.5 0 001.421-1.033l1.286-3.953z"
+                ></path>
+              </svg>
+              <svg
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                class="h-4 w-4 text-yellow-400"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.049 2.927c.3-.916 1.603-.916 1.902 0l1.286 3.953a1.5 1.5 0 001.421 1.033h4.171c.949 0 1.341 1.154.577 1.715l-3.38 2.458a1.5 1.5 0 00-.54 1.659l1.286 3.953c.3.916-.757 1.67-1.539 1.145l-3.38-2.458a1.5 1.5 0 00-1.76 0l-3.38 2.458c-.782.525-1.838-.229-1.539-1.145l1.286-3.953a1.5 1.5 0 00-.54-1.659l-3.38-2.458c-.764-.561-.372-1.715.577-1.715h4.171a1.5 1.5 0 001.421-1.033l1.286-3.953z"
+                ></path>
+              </svg>
+              <svg
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                class="h-4 w-4 text-yellow-400"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.049 2.927c.3-.916 1.603-.916 1.902 0l1.286 3.953a1.5 1.5 0 001.421 1.033h4.171c.949 0 1.341 1.154.577 1.715l-3.38 2.458a1.5 1.5 0 00-.54 1.659l1.286 3.953c.3.916-.757 1.67-1.539 1.145l-3.38-2.458a1.5 1.5 0 00-1.76 0l-3.38 2.458c-.782.525-1.838-.229-1.539-1.145l1.286-3.953a1.5 1.5 0 00-.54-1.659l-3.38-2.458c-.764-.561-.372-1.715.577-1.715h4.171a1.5 1.5 0 001.421-1.033l1.286-3.953z"
+                ></path>
+              </svg>
 
-            <ion-icon name="chevron-down"></ion-icon>
-          </button>
+              <svg
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                class="h-4 w-4 text-yellow-200"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.049 2.927c.3-.916 1.603-.916 1.902 0l1.286 3.953a1.5 1.5 0 001.421 1.033h4.171c.949 0 1.341 1.154.577 1.715l-3.38 2.458a1.5 1.5 0 00-.54 1.659l1.286 3.953c.3.916-.757 1.67-1.539 1.145l-3.38-2.458a1.5 1.5 0 00-1.76 0l-3.38 2.458c-.782.525-1.838-.229-1.539-1.145l1.286-3.953a1.5 1.5 0 00-.54-1.659l-3.38-2.458c-.764-.561-.372-1.715.577-1.715h4.171a1.5 1.5 0 001.421-1.033l1.286-3.953z"
+                ></path>
+              </svg>
+            </div>
+          </div>
         </div>
 
-        <div class="sidebar-info_more">
-          <div class="separator"></div>
-
-          <ul class="contacts-list">
-            <li class="contact-item">
-              <div class="icon-box">
-                <ion-icon name="mail-outline"></ion-icon>
-              </div>
-
-              <div class="contact-info">
-                <p class="contact-title">Email</p>
-
-                <a href="mailto:richard@example.com" class="contact-link"
-                  >richard@example.com</a
-                >
-              </div>
-            </li>
-
-            <li class="contact-item">
-              <div class="icon-box">
-                <ion-icon name="phone-portrait-outline"></ion-icon>
-              </div>
-
-              <div class="contact-info">
-                <p class="contact-title">Phone</p>
-
-                <a href="tel:+12133522795" class="contact-link"
-                  >+1 (213) 352-2795</a
-                >
-              </div>
-            </li>
-
-            <li class="contact-item">
-              <div class="icon-box">
-                <ion-icon name="calendar-outline"></ion-icon>
-              </div>
-
-              <div class="contact-info">
-                <p class="contact-title">Birthday</p>
-
-                <time datetime="1982-06-23">June 23, 1982</time>
-              </div>
-            </li>
-
-            <li class="contact-item">
-              <div class="icon-box">
-                <ion-icon name="location-outline"></ion-icon>
-              </div>
-
-              <div class="contact-info">
-                <p class="contact-title">Location</p>
-
-                <address>Sacramento, California, USA</address>
-              </div>
-            </li>
-          </ul>
-
-          <div class="separator"></div>
-
-          <ul class="social-list">
-            <li class="social-item">
-              <a href="#" class="social-link">
-                <ion-icon name="logo-facebook"></ion-icon>
-              </a>
-            </li>
-
-            <li class="social-item">
-              <a href="#" class="social-link">
-                <ion-icon name="logo-twitter"></ion-icon>
-              </a>
-            </li>
-
-            <li class="social-item">
-              <a href="#" class="social-link">
-                <ion-icon name="logo-instagram"></ion-icon>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </aside>
-
-      <!--
-      - #main-content
-    -->
-
-      <div class="main-content">
-        <!--
-        - #NAVBAR
-      -->
-
-        <nav class="navbar">
-          <ul class="navbar-list">
-            <li class="navbar-item">
-              <button class="navbar-link active" data-nav-link>About</button>
-            </li>
-
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Resume</button>
-            </li>
-
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Portfolio</button>
-            </li>
-
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Contact</button>
-            </li>
-          </ul>
-        </nav>
-
-        <!--
-        - #ABOUT
-      -->
-
-        <article class="about active" data-page="about">
-          <header>
-            <h2 class="h2 article-title">About me</h2>
-          </header>
-
-          <section class="about-text">
-            <p>
-              I'm Creative Director and UI/UX Designer from Sydney, Australia,
-              working in web development and print media. I enjoy turning
-              complex problems into simple, beautiful and intuitive designs.
-            </p>
-
-            <p>
-              My job is to build your website so that it is functional and
-              user-friendly but at the same time attractive. Moreover, I add
-              personal touch to your product and make sure that is eye-catching
-              and easy to use. My aim is to bring across your message and
-              identity in the most creative way. I created web design for many
-              famous brand companies.
-            </p>
-          </section>
-
-          <!--
-          - service
-        -->
-
-          <section class="service">
-            <h3 class="h3 service-title">What i'm doing</h3>
-
-            <ul class="service-list">
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img
-                    src="./assets/images/icon-design.svg
-                "
-                    alt="design icon"
-                    width="40"
-                  />
-                </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Web design</h4>
-
-                  <p class="service-item-text">
-                    The most modern and high-quality design made at a
-                    professional level.
-                  </p>
-                </div>
-              </li>
-
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img
-                    src="./assets/images/icon-dev.svg"
-                    alt="Web development icon"
-                    width="40"
-                  />
-                </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Web development</h4>
-
-                  <p class="service-item-text">
-                    High-quality development of sites at the professional level.
-                  </p>
-                </div>
-              </li>
-
-              <!-- <li class="service-item">
-                <div class="service-icon-box">
-                  <img
-                    src="./assets/images/icon-app.svg"
-                    alt="mobile app icon"
-                    width="40"
-                  />
-                </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Mobile apps</h4>
-
-                  <p class="service-item-text">
-                    Professional development of applications for iOS and
-                    Android.
-                  </p>
-                </div>
-              </li>
-
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img
-                    src="./assets/images/icon-photo.svg"
-                    alt="camera icon"
-                    width="40"
-                  />
-                </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Photography</h4>
-
-                  <p class="service-item-text">
-                    I make high-quality photos of any category at a professional
-                    level.
-                  </p>
-                </div>
-              </li> -->
-            </ul>
-          </section>
-
-          <!--
-          - testimonials
-        -->
-
-          <section class="testimonials">
-            <!-- <h3 class="h3 testimonials-title">Testimonials</h3> -->
-
-            <ul class="testimonials-list has-scrollbar">
-              <li class="testimonials-item">
-                <div class="content-card" data-testimonials-item>
-                  <figure class="testimonials-avatar-box">
-                    <img
-                      src="./assets/images/avatar-1.png"
-                      alt="Daniel lewis"
-                      width="60"
-                      data-testimonials-avatar
-                    />
-                  </figure>
-
-                  <h4
-                    class="h4 testimonials-item-title"
-                    data-testimonials-title
-                  >
-                    Daniel lewis
-                  </h4>
-
-                  <div class="testimonials-text" data-testimonials-text>
-                    <p>
-                      Richard was hired to create a corporate identity. We were
-                      very pleased with the work done. She has a lot of
-                      experience and is very concerned about the needs of
-                      client. Lorem ipsum dolor sit amet, ullamcous cididt
-                      consectetur adipiscing elit, seds do et eiusmod tempor
-                      incididunt ut laborels dolore magnarels alia.
-                    </p>
-                  </div>
-                </div>
-              </li>
-
-              <li class="testimonials-item">
-                <div class="content-card" data-testimonials-item>
-                  <figure class="testimonials-avatar-box">
-                    <img
-                      src="./assets/images/avatar-2.png"
-                      alt="Jessica miller"
-                      width="60"
-                      data-testimonials-avatar
-                    />
-                  </figure>
-
-                  <h4
-                    class="h4 testimonials-item-title"
-                    data-testimonials-title
-                  >
-                    Jessica miller
-                  </h4>
-
-                  <div class="testimonials-text" data-testimonials-text>
-                    <p>
-                      Richard was hired to create a corporate identity. We were
-                      very pleased with the work done. She has a lot of
-                      experience and is very concerned about the needs of
-                      client. Lorem ipsum dolor sit amet, ullamcous cididt
-                      consectetur adipiscing elit, seds do et eiusmod tempor
-                      incididunt ut laborels dolore magnarels alia.
-                    </p>
-                  </div>
-                </div>
-              </li>
-
-              <li class="testimonials-item">
-                <div class="content-card" data-testimonials-item>
-                  <figure class="testimonials-avatar-box">
-                    <img
-                      src="./assets/images/avatar-2.png"
-                      alt="Jessica miller"
-                      width="60"
-                      data-testimonials-avatar
-                    />
-                  </figure>
-
-                  <h4
-                    class="h4 testimonials-item-title"
-                    data-testimonials-title
-                  >
-                    Jessica miller
-                  </h4>
-
-                  <div class="testimonials-text" data-testimonials-text>
-                    <p>
-                      Richard was hired to create a corporate identity. We were
-                      very pleased with the work done. She has a lot of
-                      experience and is very concerned about the needs of
-                      client. Lorem ipsum dolor sit amet, ullamcous cididt
-                      consectetur adipiscing elit, seds do et eiusmod tempor
-                      incididunt ut laborels dolore magnarels alia.
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li class="testimonials-item">
-                <div class="content-card" data-testimonials-item>
-                  <figure class="testimonials-avatar-box">
-                    <img
-                      src="./assets/images/avatar-2.png"
-                      alt="Jessica miller"
-                      width="60"
-                      data-testimonials-avatar
-                    />
-                  </figure>
-
-                  <h4
-                    class="h4 testimonials-item-title"
-                    data-testimonials-title
-                  >
-                    Jessica miller
-                  </h4>
-
-                  <div class="testimonials-text" data-testimonials-text>
-                    <p>
-                      Richard was hired to create a corporate identity. We were
-                      very pleased with the work done. She has a lot of
-                      experience and is very concerned about the needs of
-                      client. Lorem ipsum dolor sit amet, ullamcous cididt
-                      consectetur adipiscing elit, seds do et eiusmod tempor
-                      incididunt ut laborels dolore magnarels alia.
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li class="testimonials-item">
-                <div class="content-card" data-testimonials-item>
-                  <figure class="testimonials-avatar-box">
-                    <img
-                      src="./assets/images/avatar-2.png"
-                      alt="Jessica miller"
-                      width="60"
-                      data-testimonials-avatar
-                    />
-                  </figure>
-
-                  <h4
-                    class="h4 testimonials-item-title"
-                    data-testimonials-title
-                  >
-                    Jessica miller
-                  </h4>
-
-                  <div class="testimonials-text" data-testimonials-text>
-                    <p>
-                      Richard was hired to create a corporate identity. We were
-                      very pleased with the work done. She has a lot of
-                      experience and is very concerned about the needs of
-                      client. Lorem ipsum dolor sit amet, ullamcous cididt
-                      consectetur adipiscing elit, seds do et eiusmod tempor
-                      incididunt ut laborels dolore magnarels alia.
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li class="testimonials-item">
-                <div class="content-card" data-testimonials-item>
-                  <figure class="testimonials-avatar-box">
-                    <img
-                      src="./assets/images/avatar-2.png"
-                      alt="Jessica miller"
-                      width="60"
-                      data-testimonials-avatar
-                    />
-                  </figure>
-
-                  <h4
-                    class="h4 testimonials-item-title"
-                    data-testimonials-title
-                  >
-                    Jessica miller
-                  </h4>
-
-                  <div class="testimonials-text" data-testimonials-text>
-                    <p>
-                      Richard was hired to create a corporate identity. We were
-                      very pleased with the work done. She has a lot of
-                      experience and is very concerned about the needs of
-                      client. Lorem ipsum dolor sit amet, ullamcous cididt
-                      consectetur adipiscing elit, seds do et eiusmod tempor
-                      incididunt ut laborels dolore magnarels alia.
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li class="testimonials-item">
-                <div class="content-card" data-testimonials-item>
-                  <figure class="testimonials-avatar-box">
-                    <img
-                      src="./assets/images/avatar-2.png"
-                      alt="Jessica miller"
-                      width="60"
-                      data-testimonials-avatar
-                    />
-                  </figure>
-
-                  <h4
-                    class="h4 testimonials-item-title"
-                    data-testimonials-title
-                  >
-                    Jessica miller
-                  </h4>
-
-                  <div class="testimonials-text" data-testimonials-text>
-                    <p>
-                      Richard was hired to create a corporate identity. We were
-                      very pleased with the work done. She has a lot of
-                      experience and is very concerned about the needs of
-                      client. Lorem ipsum dolor sit amet, ullamcous cididt
-                      consectetur adipiscing elit, seds do et eiusmod tempor
-                      incididunt ut laborels dolore magnarels alia.
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li class="testimonials-item">
-                <div class="content-card" data-testimonials-item>
-                  <figure class="testimonials-avatar-box">
-                    <img
-                      src="./assets/images/avatar-2.png"
-                      alt="Jessica miller"
-                      width="60"
-                      data-testimonials-avatar
-                    />
-                  </figure>
-
-                  <h4
-                    class="h4 testimonials-item-title"
-                    data-testimonials-title
-                  >
-                    Jessica miller
-                  </h4>
-
-                  <div class="testimonials-text" data-testimonials-text>
-                    <p>
-                      Richard was hired to create a corporate identity. We were
-                      very pleased with the work done. She has a lot of
-                      experience and is very concerned about the needs of
-                      client. Lorem ipsum dolor sit amet, ullamcous cididt
-                      consectetur adipiscing elit, seds do et eiusmod tempor
-                      incididunt ut laborels dolore magnarels alia.
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li class="testimonials-item">
-                <div class="content-card" data-testimonials-item>
-                  <figure class="testimonials-avatar-box">
-                    <img
-                      src="./assets/images/avatar-2.png"
-                      alt="Jessica miller"
-                      width="60"
-                      data-testimonials-avatar
-                    />
-                  </figure>
-
-                  <h4
-                    class="h4 testimonials-item-title"
-                    data-testimonials-title
-                  >
-                    Jessica miller
-                  </h4>
-
-                  <div class="testimonials-text" data-testimonials-text>
-                    <p>
-                      Richard was hired to create a corporate identity. We were
-                      very pleased with the work done. She has a lot of
-                      experience and is very concerned about the needs of
-                      client. Lorem ipsum dolor sit amet, ullamcous cididt
-                      consectetur adipiscing elit, seds do et eiusmod tempor
-                      incididunt ut laborels dolore magnarels alia.
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li class="testimonials-item">
-                <div class="content-card" data-testimonials-item>
-                  <figure class="testimonials-avatar-box">
-                    <img
-                      src="./assets/images/avatar-3.png"
-                      alt="Emily evans"
-                      width="60"
-                      data-testimonials-avatar
-                    />
-                  </figure>
-
-                  <h4
-                    class="h4 testimonials-item-title"
-                    data-testimonials-title
-                  >
-                    Emily evans
-                  </h4>
-
-                  <div class="testimonials-text" data-testimonials-text>
-                    <p>
-                      Richard was hired to create a corporate identity. We were
-                      very pleased with the work done. She has a lot of
-                      experience and is very concerned about the needs of
-                      client. Lorem ipsum dolor sit amet, ullamcous cididt
-                      consectetur adipiscing elit, seds do et eiusmod tempor
-                      incididunt ut laborels dolore magnarels alia.
-                    </p>
-                  </div>
-                </div>
-              </li>
-
-              <li class="testimonials-item">
-                <div class="content-card" data-testimonials-item>
-                  <figure class="testimonials-avatar-box">
-                    <img
-                      src="./assets/images/avatar-4.png"
-                      alt="Henry william"
-                      width="60"
-                      data-testimonials-avatar
-                    />
-                  </figure>
-
-                  <h4
-                    class="h4 testimonials-item-title"
-                    data-testimonials-title
-                  >
-                    Henry william
-                  </h4>
-
-                  <div class="testimonials-text" data-testimonials-text>
-                    <p>
-                      Richard was hired to create a corporate identity. We were
-                      very pleased with the work done. She has a lot of
-                      experience and is very concerned about the needs of
-                      client. Lorem ipsum dolor sit amet, ullamcous cididt
-                      consectetur adipiscing elit, seds do et eiusmod tempor
-                      incididunt ut laborels dolore magnarels alia.
-                    </p>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </section>
-
-          <!--
-          - testimonials modal
-        -->
-
-          <div class="modal-container" data-modal-container>
-            <div class="overlay" data-overlay></div>
-
-            <section class="testimonials-modal">
-              <button class="modal-close-btn" data-modal-close-btn>
-                <ion-icon name="close-outline"></ion-icon>
-              </button>
-
-              <div class="modal-img-wrapper">
-                <figure class="modal-avatar-box">
-                  <img
-                    src="./assets/images/avatar-1.png"
-                    alt="Daniel lewis"
-                    width="80"
-                    data-modal-img
-                  />
-                </figure>
-
-                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
-              </div>
-
-              <div class="modal-content">
-                <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-                <time datetime="2021-06-14">14 June, 2021</time>
-
-                <div data-modal-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were
-                    very pleased with the work done. She has a lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum
-                    dolor sit amet, ullamcous cididt consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels
-                    dolore magnarels alia.
-                  </p>
-                </div>
-              </div>
-            </section>
+        <div
+          class="bg-gray-200 dark:bg-neutral-700 rounded-md w-full h-40 animate-pulse"
+        ></div>
+      </div>
+
+      <!--  -->
+      <div class="card_">
+        <div class="card">
+          <div class="search-container">
+            <svg
+              fill="none"
+              viewBox="0 0 24 24"
+              height="20"
+              width="20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linejoin="round"
+                stroke-linecap="round"
+                stroke-width="2"
+                stroke="#171718"
+                d="M17.5 17.5L22 22"
+              ></path>
+              <path
+                stroke-linejoin="round"
+                stroke-width="2"
+                stroke="#171718"
+                d="M20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20C15.9706 20 20 15.9706 20 11Z"
+              ></path>
+            </svg>
+            <input placeholder="Search for a quick action" type="search" />
           </div>
 
-          <!--
-          - clients
-        --></article>
+          <div class="categories">
+            <button type="button">Note</button>
+            <button type="button">File</button>
+            <button type="button">Email</button>
+            <button type="button">Others</button>
+          </div>
 
-        <!--
-        - #RESUME
-      -->
-
-        <article class="resume" data-page="resume">
-          <header>
-            <h2 class="h2 article-title">Resume</h2>
-          </header>
-
-          <section class="timeline">
-            <div class="title-wrapper">
-              <div class="icon-box">
-                <ion-icon name="book-outline"></ion-icon>
-              </div>
-
-              <h3 class="h3">Education</h3>
-            </div>
-
-            <ol class="timeline-list">
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">
-                  University school of the arts
-                </h4>
-
-                <span>2007 — 2008</span>
-
-                <p class="timeline-text">
-                  Nemo enims ipsam voluptatem, blanditiis praesentium voluptum
-                  delenit atque corrupti, quos dolores et quas molestias
-                  exceptur.
-                </p>
-              </li>
-
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">New york academy of art</h4>
-
-                <span>2006 — 2007</span>
-
-                <p class="timeline-text">
-                  Ratione voluptatem sequi nesciunt, facere quisquams facere
-                  menda ossimus, omnis voluptas assumenda est omnis..
-                </p>
-              </li>
-
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">
-                  High school of art and design
-                </h4>
-
-                <span>2002 — 2004</span>
-
-                <p class="timeline-text">
-                  Duis aute irure dolor in reprehenderit in voluptate, quila
-                  voluptas mag odit aut fugit, sed consequuntur magni dolores
-                  eos.
-                </p>
-              </li>
-            </ol>
-          </section>
-
-          <section class="timeline">
-            <div class="title-wrapper">
-              <div class="icon-box">
-                <ion-icon name="book-outline"></ion-icon>
-              </div>
-
-              <h3 class="h3">Experience</h3>
-            </div>
-
-            <ol class="timeline-list">
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Creative director</h4>
-
-                <span>2015 — Present</span>
-
-                <p class="timeline-text">
-                  Nemo enim ipsam voluptatem blanditiis praesentium voluptum
-                  delenit atque corrupti, quos dolores et qvuas molestias
-                  exceptur.
-                </p>
-              </li>
-
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Art director</h4>
-
-                <span>2013 — 2015</span>
-
-                <p class="timeline-text">
-                  Nemo enims ipsam voluptatem, blanditiis praesentium voluptum
-                  delenit atque corrupti, quos dolores et quas molestias
-                  exceptur.
-                </p>
-              </li>
-
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Web designer</h4>
-
-                <span>2010 — 2013</span>
-
-                <p class="timeline-text">
-                  Nemo enims ipsam voluptatem, blanditiis praesentium voluptum
-                  delenit atque corrupti, quos dolores et quas molestias
-                  exceptur.
-                </p>
-              </li>
-            </ol>
-          </section>
-        </article>
-
-        <!--
-        - #PORTFOLIO
-      -->
-
-        <article class="portfolio" data-page="portfolio">
-          <header>
-            <h2 class="h2 article-title">Portfolio</h2>
-          </header>
-
-          <section class="projects">
-            <ul class="filter-list">
-              <li class="filter-item">
-                <button class="active" data-filter-btn>All</button>
-              </li>
-
-              <li class="filter-item">
-                <button data-filter-btn>Web design</button>
-              </li>
-
-              <li class="filter-item">
-                <button data-filter-btn>Applications</button>
-              </li>
-
-              <li class="filter-item">
-                <button data-filter-btn>Web development</button>
-              </li>
-            </ul>
-
-            <div class="filter-select-box">
-              <button class="filter-select" data-select>
-                <div class="select-value" data-selecct-value>
-                  Select category
+          <div class="results">
+            <p class="label">Best Results</p>
+            <div class="results-list">
+              <div class="entry">
+                <div class="icon">
+                  <svg
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    height="20"
+                    width="20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linejoin="round"
+                      stroke-linecap="round"
+                      stroke-width="2"
+                      stroke="#171718"
+                      d="M13 2H13.2727C16.5339 2 18.1645 2 19.2969 2.79784C19.6214 3.02643 19.9094 3.29752 20.1523 3.60289C21 4.66867 21 6.20336 21 9.27273V11.8182C21 14.7814 21 16.2629 20.5311 17.4462C19.7772 19.3486 18.1829 20.8491 16.1616 21.5586C14.9044 22 13.3302 22 10.1818 22C8.38275 22 7.48322 22 6.76478 21.7478C5.60979 21.3424 4.69875 20.4849 4.26796 19.3979C4 18.7217 4 17.8751 4 16.1818V12"
+                    ></path>
+                    <path
+                      stroke-linejoin="round"
+                      stroke-linecap="round"
+                      stroke-width="2"
+                      stroke="#171718"
+                      d="M21 12C21 13.8409 19.5076 15.3333 17.6667 15.3333C17.0009 15.3333 16.216 15.2167 15.5686 15.3901C14.9935 15.5442 14.5442 15.9935 14.3901 16.5686C14.2167 17.216 14.3333 18.0009 14.3333 18.6667C14.3333 20.5076 12.8409 22 11 22"
+                    ></path>
+                    <path
+                      stroke-linecap="round"
+                      stroke-width="2"
+                      stroke="#171718"
+                      d="M11 6L3 6M7 2V10"
+                    ></path>
+                  </svg>
                 </div>
-
-                <div class="select-icon">
-                  <ion-icon name="chevron-down"></ion-icon>
+                <div class="desc">
+                  <label>Create a new File</label>
+                  <span>Add a new file to your library list</span>
                 </div>
-              </button>
-
-              <ul class="select-list">
-                <li class="select-item">
-                  <button data-select-item>All</button>
-                </li>
-
-                <li class="select-item">
-                  <button data-select-item>Web design</button>
-                </li>
-
-                <li class="select-item">
-                  <button data-select-item>Applications</button>
-                </li>
-
-                <li class="select-item">
-                  <button data-select-item>Web development</button>
-                </li>
-              </ul>
+              </div>
+              <div class="entry">
+                <div class="icon">
+                  <svg
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    height="20"
+                    width="20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linejoin="round"
+                      stroke-linecap="round"
+                      stroke-width="2"
+                      stroke="#171718"
+                      d="M17.4776 9.01106C17.485 9.01102 17.4925 9.01101 17.5 9.01101C19.9853 9.01101 22 11.0294 22 13.5193C22 15.8398 20.25 17.7508 18 18M17.4776 9.01106C17.4924 8.84606 17.5 8.67896 17.5 8.51009C17.5 5.46695 15.0376 3 12 3C9.12324 3 6.76233 5.21267 6.52042 8.03192M17.4776 9.01106C17.3753 10.1476 16.9286 11.1846 16.2428 12.0165M6.52042 8.03192C3.98398 8.27373 2 10.4139 2 13.0183C2 15.4417 3.71776 17.4632 6 17.9273M6.52042 8.03192C6.67826 8.01687 6.83823 8.00917 7 8.00917C8.12582 8.00917 9.16474 8.38194 10.0005 9.01101"
+                    ></path>
+                    <path
+                      stroke-linejoin="round"
+                      stroke-linecap="round"
+                      stroke-width="2"
+                      stroke="#171718"
+                      d="M12 13L12 21M12 13C11.2998 13 9.99153 14.9943 9.5 15.5M12 13C12.7002 13 14.0085 14.9943 14.5 15.5"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="desc">
+                  <label>Upload a file</label>
+                  <span
+                    >Use your one of your system files to save and edit</span
+                  >
+                </div>
+              </div>
             </div>
 
-            <ul class="project-list">
-              <li
-                class="project-item active blog-post-item"
-                data-filter-item
-                data-category="web development"
-              >
-                <!--  -->
-                <a href="#">
-                  <figure class="blog-banner-box">
-                    <img
-                      src="./assets/images/blog-1.jpg"
-                      alt="Design conferences in 2022"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <div class="blog-content">
-                    <div class="blog-meta">
-                      <p class="blog-category">Design</p>
-
-                      <span class="dot"></span>
-
-                      <time datetime="2022-02-23">Fab 23, 2022</time>
-                    </div>
-
-                    <h3 class="h3 blog-item-title">
-                      Design conferences in 2022
-                    </h3>
-
-                    <p class="blog-text">
-                      Veritatis et quasi architecto beatae vitae dicta sunt,
-                      explicabo.
-                    </p>
-                  </div>
-                </a>
-
-                <!--  -->
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web development"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-1.jpg"
-                      alt="finance"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Finance</h3>
-
-                  <p class="project-category">Web development</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web development"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-2.png"
-                      alt="orizon"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Orizon</h3>
-
-                  <p class="project-category">Web development</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web design"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-3.jpg"
-                      alt="fundo"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Fundo</h3>
-
-                  <p class="project-category">Web design</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="applications"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-4.png"
-                      alt="brawlhalla"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Brawlhalla</h3>
-
-                  <p class="project-category">Applications</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web design"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-5.png"
-                      alt="dsm."
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">DSM.</h3>
-
-                  <p class="project-category">Web design</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web design"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-6.png"
-                      alt="metaspark"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">MetaSpark</h3>
-
-                  <p class="project-category">Web design</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web development"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-7.png"
-                      alt="summary"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Summary</h3>
-
-                  <p class="project-category">Web development</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="applications"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-8.jpg"
-                      alt="task manager"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Task Manager</h3>
-
-                  <p class="project-category">Applications</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web development"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-9.png"
-                      alt="arrival"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Arrival</h3>
-
-                  <p class="project-category">Web development</p>
-                </a>
-              </li>
-            </ul>
-          </section>
-        </article>
-
-        <!--
-        - #BLOG
-      -->
-
-        <!--
-        - #CONTACT
-      -->
-
-        <article class="contact" data-page="contact">
-          <header>
-            <h2 class="h2 article-title">Contact</h2>
-          </header>
-
-          <section class="mapbox" data-mapbox>
-            <figure>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-                width="400"
-                height="300"
-                loading="lazy"
-              ></iframe>
-            </figure>
-          </section>
-
-          <section class="contact-form">
-            <h3 class="h3 form-title">Contact Form</h3>
-
-            <form action="#" class="form" data-form>
-              <div class="input-wrapper">
-                <input
-                  type="text"
-                  name="fullname"
-                  class="form-input"
-                  placeholder="Full name"
-                  required
-                  data-form-input
-                />
-
-                <input
-                  type="email"
-                  name="email"
-                  class="form-input"
-                  placeholder="Email address"
-                  required
-                  data-form-input
-                />
+            <hr />
+            <div class="results-list">
+              <div class="entry">
+                <div class="icon">
+                  <svg
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    height="20"
+                    width="20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linejoin="round"
+                      stroke-linecap="round"
+                      stroke-width="2"
+                      stroke="#171718"
+                      d="M13 2H13.2727C16.5339 2 18.1645 2 19.2969 2.79784C19.6214 3.02643 19.9094 3.29752 20.1523 3.60289C21 4.66867 21 6.20336 21 9.27273V11.8182C21 14.7814 21 16.2629 20.5311 17.4462C19.7772 19.3486 18.1829 20.8491 16.1616 21.5586C14.9044 22 13.3302 22 10.1818 22C8.38275 22 7.48322 22 6.76478 21.7478C5.60979 21.3424 4.69875 20.4849 4.26796 19.3979C4 18.7217 4 17.8751 4 16.1818V12"
+                    ></path>
+                    <path
+                      stroke-linejoin="round"
+                      stroke-linecap="round"
+                      stroke-width="2"
+                      stroke="#171718"
+                      d="M21 12C21 13.8409 19.5076 15.3333 17.6667 15.3333C17.0009 15.3333 16.216 15.2167 15.5686 15.3901C14.9935 15.5442 14.5442 15.9935 14.3901 16.5686C14.2167 17.216 14.3333 18.0009 14.3333 18.6667C14.3333 20.5076 12.8409 22 11 22"
+                    ></path>
+                    <path
+                      stroke-linecap="round"
+                      stroke-width="2"
+                      stroke="#171718"
+                      d="M11 6L3 6M7 2V10"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="desc">
+                  <label>Create a new File</label>
+                  <span>Add a new file to your library list</span>
+                </div>
               </div>
+              <div class="entry">
+                <div class="icon">
+                  <svg
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    height="20"
+                    width="20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linejoin="round"
+                      stroke-linecap="round"
+                      stroke-width="2"
+                      stroke="#171718"
+                      d="M17.4776 9.01106C17.485 9.01102 17.4925 9.01101 17.5 9.01101C19.9853 9.01101 22 11.0294 22 13.5193C22 15.8398 20.25 17.7508 18 18M17.4776 9.01106C17.4924 8.84606 17.5 8.67896 17.5 8.51009C17.5 5.46695 15.0376 3 12 3C9.12324 3 6.76233 5.21267 6.52042 8.03192M17.4776 9.01106C17.3753 10.1476 16.9286 11.1846 16.2428 12.0165M6.52042 8.03192C3.98398 8.27373 2 10.4139 2 13.0183C2 15.4417 3.71776 17.4632 6 17.9273M6.52042 8.03192C6.67826 8.01687 6.83823 8.00917 7 8.00917C8.12582 8.00917 9.16474 8.38194 10.0005 9.01101"
+                    ></path>
+                    <path
+                      stroke-linejoin="round"
+                      stroke-linecap="round"
+                      stroke-width="2"
+                      stroke="#171718"
+                      d="M12 13L12 21M12 13C11.2998 13 9.99153 14.9943 9.5 15.5M12 13C12.7002 13 14.0085 14.9943 14.5 15.5"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="desc">
+                  <label>Upload a file</label>
+                  <span
+                    >Use your one of your system files to save and edit</span
+                  >
+                </div>
+              </div>
+            </div>
 
-              <textarea
-                name="message"
-                class="form-input"
-                placeholder="Your Message"
-                required
-                data-form-input
-              ></textarea>
+            <hr />
 
-              <button class="form-btn" type="submit" disabled data-form-btn>
-                <ion-icon name="paper-plane"></ion-icon>
-                <span>Send Message</span>
+            <div class="results-list">
+              <div class="entry">
+                <div class="icon">
+                  <svg
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    height="20"
+                    width="20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      stroke="#171718"
+                      d="M5 16L10 13M14 11L19 8M12 5V10M12 14V19M5 8L10 11M14 13L19 16"
+                    ></path>
+                    <path
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      stroke="#171718"
+                      d="M20.5 9.00001V14.5M13.5 20.5L19 17.5M4.5 17.5L10.5 20.5M3.5 15V9.00001M4.5 6.5L10.5 3.5M19.5 6.5L13.5 3.5"
+                    ></path>
+                    <circle
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      stroke="#171718"
+                      r="1.5"
+                      cy="3.5"
+                      cx="12"
+                    ></circle>
+                    <circle
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      stroke="#171718"
+                      r="1.5"
+                      cy="20.5"
+                      cx="12"
+                    ></circle>
+                    <circle
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      stroke="#171718"
+                      r="1.5"
+                      cy="7.5"
+                      cx="3.5"
+                    ></circle>
+                    <circle
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      stroke="#171718"
+                      r="1.5"
+                      cy="7.5"
+                      cx="20.5"
+                    ></circle>
+                    <circle
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      stroke="#171718"
+                      r="1.5"
+                      cy="16.5"
+                      cx="20.5"
+                    ></circle>
+                    <circle
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      stroke="#171718"
+                      r="1.5"
+                      cy="16.5"
+                      cx="3.5"
+                    ></circle>
+                    <path
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      stroke="#171718"
+                      d="M12 9.75L14 10.875V13.125L12 14.25L10 13.125V10.875L12 9.75Z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="desc">
+                  <label>Generate a new document with AI</label>
+                  <span
+                    >Use our ChatGPT plug-in to generate a new document</span
+                  >
+                </div>
+                <p class="badge">New</p>
+              </div>
+              <div class="entry">
+                <div class="icon">
+                  <svg
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    height="20"
+                    width="20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      stroke="#171718"
+                      d="M2 12.4C2 9.38301 2 7.87452 2.94627 6.93726C3.89254 6 5.41554 6 8.46154 6H9.53846C12.5845 6 14.1075 6 15.0537 6.93726C16 7.87452 16 9.38301 16 12.4V15.6C16 18.617 16 20.1255 15.0537 21.0627C14.1075 22 12.5845 22 9.53846 22H8.46154C5.41554 22 3.89254 22 2.94627 21.0627C2 20.1255 2 18.617 2 15.6V12.4Z"
+                    ></path>
+                    <path
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      stroke="#171718"
+                      d="M15.5376 16H16.4608C19.072 16 20.3776 16 21.1888 15.1799C22 14.3598 22 13.0399 22 10.4V7.6C22 4.96013 22 3.6402 21.1888 2.8201C20.3776 2 19.072 2 16.4608 2H15.5376C12.9264 2 11.6208 2 10.8096 2.8201C10.1002 3.53726 10.0112 4.63664 10 6.66667"
+                    ></path>
+                    <path
+                      stroke-linecap="round"
+                      stroke-width="2"
+                      stroke="#171718"
+                      d="M6 12H9M6 17H11"
+                    ></path>
+                    <path
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      stroke="#171718"
+                      d="M10.5 3L14.5 6.5"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="desc">
+                  <label>Create from a template</label>
+                  <span
+                    >Use our free templates to quickly create a document</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <div class="action">
+              <button type="button">
+                <svg
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  height="14"
+                  width="14"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linejoin="round"
+                    stroke-linecap="round"
+                    stroke-width="2.5"
+                    stroke="#5F6368"
+                    d="M12 19V4"
+                  ></path>
+                  <path
+                    stroke-linejoin="round"
+                    stroke-linecap="round"
+                    stroke-width="2.5"
+                    stroke="#5F6368"
+                    d="M7 15L11.2929 19.2929C11.6262 19.6262 11.7929 19.7929 12 19.7929C12.2071 19.7929 12.3738 19.6262 12.7071 19.2929L17 15"
+                  ></path>
+                </svg>
               </button>
-            </form>
-          </section>
-        </article>
+              <button type="button">
+                <svg
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  height="14"
+                  width="14"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linejoin="round"
+                    stroke-linecap="round"
+                    stroke-width="2.5"
+                    stroke="#5F6368"
+                    d="M12 5L12 20"
+                  ></path>
+                  <path
+                    stroke-linejoin="round"
+                    stroke-linecap="round"
+                    stroke-width="2.5"
+                    stroke="#5F6368"
+                    d="M7 9L11.2929 4.70711C11.6262 4.37377 11.7929 4.20711 12 4.20711C12.2071 4.20711 12.3738 4.37377 12.7071 4.70711L17 9"
+                  ></path>
+                </svg>
+              </button>
+              <p class="label">Navigate</p>
+            </div>
+            <div class="action">
+              <button type="button">
+                <svg
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  height="14"
+                  width="14"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linejoin="round"
+                    stroke-linecap="round"
+                    stroke-width="2.5"
+                    stroke="#5F6368"
+                    d="M20 3V5.07692C20 7.07786 20 8.07833 19.8547 8.91545C19.0547 13.5235 15.0934 17.1376 10.0426 17.8674C9.12509 18 7.19318 18 5 18"
+                  ></path>
+                  <path
+                    stroke-linejoin="round"
+                    stroke-linecap="round"
+                    stroke-width="2.5"
+                    stroke="#5F6368"
+                    d="M7 21C6.39316 20.4102 4 18.8403 4 18C4 17.1597 6.39316 15.5898 7 15"
+                  ></path>
+                </svg>
+              </button>
+              <p class="label">Select</p>
+            </div>
+            <div class="action">
+              <button type="button">
+                <svg
+                  fill="none"
+                  viewBox="0 0 14 14"
+                  height="14"
+                  width="14"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-width="1.5"
+                    stroke="#5F6368"
+                    d="M13 2.875V2.875C13 1.83947 12.1605 1 11.125 1V1C10.0895 1 9.25 1.83947 9.25 2.875V11.125C9.25 12.1605 10.0895 13 11.125 13V13C12.1605 13 13 12.1605 13 11.125V11.125C13 10.0895 12.1605 9.25 11.125 9.25H2.875C1.83947 9.25 1 10.0895 1 11.125V11.125C1 12.1605 1.83947 13 2.875 13V13C3.91053 13 4.75 12.1605 4.75 11.125V2.875C4.75 1.83947 3.91053 1 2.875 1V1C1.83947 1 1 1.83947 1 2.875V2.875C1 3.91053 1.83947 4.75 2.875 4.75H11.125C12.1605 4.75 13 3.91053 13 2.875Z"
+                  ></path>
+                </svg>
+              </button>
+              <p class="label">Quit</p>
+            </div>
+
+            <p class="label edit-actions">Edit Actions</p>
+          </div>
+        </div>
       </div>
     </main>
-
-    <!--
-    - custom js link
-  -->
-    <script src="./assets/js/script.js"></script>
-
-    <!--
-    - ionicon link
-  -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
+    <script src="./Script/app.js"></script>
   </body>
 </html>
