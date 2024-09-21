@@ -17,6 +17,7 @@
 body,
 html {
   font-family: sans-serif;
+  overflow: hidden !important;
 }
 
 body a {
@@ -479,5 +480,10 @@ p.label {
 
   div#lood .loader {
     border-radius: 100px 100px 10px 10px !important;
+  }
+  body,
+  html {
+    font-family: sans-serif;
+    overflow: auto !important;
   }
 }
