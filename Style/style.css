@@ -412,12 +412,16 @@ p.label {
   margin: auto;
   background: #ddffde;
   border: 1px solid #08581d0e;
-  border-radius: 7px;
+  border-radius: 5px;
   font-weight: 700;
   font-size: 11px;
   line-height: 13px;
   text-align: center;
   color: #08581d;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
 .card-footer {
