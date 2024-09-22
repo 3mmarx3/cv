@@ -39,6 +39,7 @@ body::before {
   transform-style: flat;
   pointer-events: none;
   z-index: -1;
+  background-color: #ddffde;
 }
 
 main.main {
