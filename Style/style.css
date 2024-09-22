@@ -858,6 +858,7 @@ svg {
 @media screen and (max-width: 767px) {
   .main {
     display: block !important;
+    background: transparent !important;
   }
   .load {
     display: none !important;
