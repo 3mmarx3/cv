@@ -274,11 +274,11 @@ header {
   justify-content: center;
   align-items: center;
   padding: 5px 15px;
-  background: #ffffff;
+  /* background: #ffffff; */
   border: 1px solid #e5e5e5;
   box-shadow: 0px 0.5px 0.5px #efefef, 0px 1px 0.5px rgba(239, 239, 239, 0.5);
   border-radius: 20px;
-  color: #171718;
+  color: white;
   transition: all 0.6s cubic-bezier(0.15, 0.83, 0.66, 1);
   font-size: 13px;
 }
@@ -352,7 +352,7 @@ p.label {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #ececec;
+  /* background-color: #ececec; */
   border-radius: 7px;
   transition: all 0.2s cubic-bezier(0.15, 0.83, 0.66, 1);
 }
@@ -897,4 +897,8 @@ button#cta {
   justify-content: center;
   text-align: center;
   padding: 15px;
+}
+
+svg {
+  color: white;
 }
