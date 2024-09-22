@@ -443,6 +443,7 @@ p.label {
 @media screen and (max-width: 767px) {
   .main {
     display: block !important;
+    background: white;
   }
   .load {
     display: none !important;
@@ -701,7 +702,7 @@ p.label {
     border-radius: var(--radius, 0px);
     width: var(--list);
     height: calc(3lh + 3rem);
-    translate: 0 calc(100cqh * -1 - 1.5rem);
+    translate: 15vh -30vh;
 
     @starting-style {
       translate: 0 0;
@@ -879,4 +880,19 @@ p.label {
 button#cta {
   background: white;
   color: black;
+}
+
+.label_ {
+  font-family: "Gloria Hallelujah", cursive;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 5vh;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 15px;
 }
