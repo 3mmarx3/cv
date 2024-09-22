@@ -442,53 +442,6 @@ p.label {
   width: 0 !important;
 }
 
-@media screen and (max-width: 767px) {
-  .main {
-    display: block !important;
-  }
-  .load {
-    display: none !important;
-  }
-
-  .navbarr {
-    display: none;
-  }
-
-  div#lood {
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px) !important;
-    z-index: 10;
-    transition: right 0.6s ease;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background-color: #1f1f1f66 !important;
-    pointer-events: none;
-    z-index: 10;
-    transition: opacity 0.25s ease;
-    outline: none;
-    border: none;
-  }
-  div#lood {
-    justify-content: center;
-    align-items: center;
-    background: #ceecf9;
-  }
-
-  div#lood .loader {
-    border-radius: 100px 100px 10px 10px !important;
-  }
-  body,
-  html {
-    font-family: sans-serif;
-    overflow: auto !important;
-  }
-}
-
 /* pc */
 
 @import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap");
@@ -822,6 +775,40 @@ p.label {
     box-sizing: border-box;
   }
 
+  body::before {
+    --size: 45px;
+    --line: color-mix(in lch, canvasText, transparent 70%);
+    content: "";
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    background: linear-gradient(
+          90deg,
+          var(--line) 1px,
+          transparent 1px var(--size)
+        )
+        50% 50% / var(--size) var(--size),
+      linear-gradient(var(--line) 1px, transparent 1px var(--size)) 50% 50% /
+        var(--size) var(--size);
+    mask: linear-gradient(-20deg, transparent 50%, white);
+    top: 0;
+    transform-style: flat;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  .bear-link {
+    color: canvasText;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    width: 48px;
+    aspect-ratio: 1;
+    display: grid;
+    place-items: center;
+    opacity: 0.8;
+  }
+
   :where(.x-link, .bear-link):is(:hover, :focus-visible) {
     opacity: 1;
   }
@@ -868,36 +855,49 @@ svg {
   color: white;
 }
 
-body::before {
-  --size: 45px;
-  --line: color-mix(in lch, canvasText, transparent 70%);
-  content: "";
-  height: 100vh;
-  width: 100vw;
-  position: fixed;
-  background: linear-gradient(
-        90deg,
-        var(--line) 1px,
-        transparent 1px var(--size)
-      )
-      50% 50% / var(--size) var(--size),
-    linear-gradient(var(--line) 1px, transparent 1px var(--size)) 50% 50% /
-      var(--size) var(--size);
-  mask: linear-gradient(-20deg, transparent 50%, white);
-  top: 0;
-  transform-style: flat;
-  pointer-events: none;
-  z-index: -1;
-}
+@media screen and (max-width: 767px) {
+  .main {
+    display: block !important;
+  }
+  .load {
+    display: none !important;
+  }
 
-.bear-link {
-  color: canvasText;
-  position: fixed;
-  top: 1rem;
-  left: 1rem;
-  width: 48px;
-  aspect-ratio: 1;
-  display: grid;
-  place-items: center;
-  opacity: 0.8;
+  .navbarr {
+    display: none;
+  }
+
+  div#lood {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px) !important;
+    z-index: 10;
+    transition: right 0.6s ease;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #1f1f1f66 !important;
+    pointer-events: none;
+    z-index: 10;
+    transition: opacity 0.25s ease;
+    outline: none;
+    border: none;
+  }
+  div#lood {
+    justify-content: center;
+    align-items: center;
+    background: #ceecf9;
+  }
+
+  div#lood .loader {
+    border-radius: 100px 100px 10px 10px !important;
+  }
+  body,
+  html {
+    font-family: sans-serif;
+    overflow: auto !important;
+  }
 }
