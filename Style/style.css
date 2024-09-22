@@ -171,7 +171,7 @@ header {
 
 #menu-icon {
   font-size: 25px;
-  /* color: #000; */
+  color: white;
   cursor: pointer;
   z-index: 10001;
   display: none;
@@ -319,27 +319,27 @@ p.label {
   padding: 5px 20px;
   transition: all 0.2s cubic-bezier(0.15, 0.83, 0.66, 1);
 }
-
+/* 
 .results .entry:hover {
   background-color: #f5f8fe;
-}
+} */
 
-.results .results-list .entry:hover .icon {
+/* .results .results-list .entry:hover .icon {
   background-color: #1763fa;
-}
+} */
 
 .results .results-list .entry:hover .icon svg path,
 .results .results-list .entry:hover .icon svg circle {
   fill: white;
 }
 
-.results .results-list .entry:hover label {
+/* .results .results-list .entry:hover label {
   color: #1763fa;
 }
 
 .results .results-list .entry:hover span {
   color: #7ba0eb;
-}
+} */
 
 .results .results-list {
   display: flex;
@@ -899,6 +899,6 @@ svg {
   html {
     font-family: sans-serif;
     overflow: auto !important;
-    background: black !important;
+    background: transparent !important;
   }
 }
