@@ -899,5 +899,6 @@ svg {
   html {
     font-family: sans-serif;
     overflow: auto !important;
+    background: black !important;
   }
 }
