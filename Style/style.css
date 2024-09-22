@@ -366,6 +366,7 @@ p.label {
 .results .results-list {
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 
 .results .entry .icon {
