@@ -1308,7 +1308,6 @@ p.day {
 body,
 html {
   font-family: sans-serif;
-  overflow: hidden !important;
 }
 body::before {
   --size: 45px;
@@ -1339,6 +1338,10 @@ main.main {
 body a {
   text-decoration: none;
   color: #000;
+}
+
+body {
+  background: #ceecf9;
 }
 
 /* lood */
@@ -2231,4 +2234,135 @@ svg.size-6 {
   main.main {
     background: black;
   }
+}
+
+/* .name {
+  color: white;
+} */
+
+svg.bi.bi-chat {
+  color: black !important;
+  fill: black;
+}
+
+.container_C {
+  margin-top: 5vh;
+}
+
+.card_C {
+  border-radius: 10px;
+  /* background: #dcffdc40;
+  padding: 19px; */
+}
+
+.first,
+.second {
+  margin-bottom: 5vh;
+}
+
+.heading {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.hour {
+  margin-left: 5px;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.second {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #deffde;
+  padding: 10px;
+  border-radius: 10px;
+  color: black !important;
+}
+
+.image {
+  margin-right: 10px;
+}
+
+.rounded-circle {
+  border-radius: 50%;
+  width: 85px;
+  height: 85px;
+  border: 1px solid #deffde;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+  font-size: larger;
+}
+
+.ratings i {
+  color: gold;
+  margin-left: 2px;
+}
+
+.buttons {
+  margin-top: 10px;
+  display: flex;
+}
+
+.btn {
+  border: 1px solid black;
+  /* background-color: #ddffde; */
+  /* color: white; */
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.line-color {
+  border: 10px dashed #deffde;
+  border-radius: 40px;
+}
+
+.book-now {
+  background-color: #ddffde;
+  color: #08581d;
+  width: 100%;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.hour {
+  margin-top: 1px;
+  color: green;
+  font-size: 12px;
+}
+
+.ratings i {
+  color: #388e3c;
+}
+
+.btn {
+  border-radius: 150px !important;
+}
+
+.line-color {
+  color: #ddffde;
+}
+
+.comments {
+  margin: 20px 0;
+  color: white;
 }
