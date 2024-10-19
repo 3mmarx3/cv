@@ -1564,7 +1564,7 @@ header {
   justify-content: flex-start;
   gap: 10px;
   /* padding: 0 20px; */
-  margin-top: 2vh;
+  margin-top: 4vh;
 }
 
 .search-container input {
@@ -2328,8 +2328,9 @@ svg.bi.bi-chat {
 }
 
 .line-color {
-  border: 10px dashed #deffde;
+  border: 10px #deffde;
   border-radius: 40px;
+  border-style: double;
 }
 
 .book-now {
