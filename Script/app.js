@@ -1,28 +1,32 @@
-// function to handle offcanvas animation
+// Function to handle offcanvas animation
 function offcanvasAnimation(type, modal, trigger, className, animationName) {
   const body = document.body;
   const app = document.querySelector(".app");
   const panel = modal.querySelector(".sidepanel");
   const burger = trigger.querySelector(".burger");
 
-  // ضبط حالة الفتح
-  if (type == "open") {
+  // Set open state
+  if (type === "open") {
     body.classList.add("page__body--offcanvas-open");
     app.classList.add("app--offcanvas-open");
   }
 
   panel.classList.add(className);
   burger.classList.toggle("burger--active");
-  panel.onanimationend = (event) => {
-    if (event.animationName == animationName) {
+
+  const handleAnimationEnd = (event) => {
+    if (event.animationName === animationName) {
       panel.classList.remove(className);
-      // ضبط حالة الإغلاق
-      if (type == "close") {
+      panel.removeEventListener("animationend", handleAnimationEnd); // Clean up
+      // Set close state
+      if (type === "close") {
         body.classList.remove("page__body--offcanvas-open");
         app.classList.remove("app--offcanvas-open");
       }
     }
   };
+
+  panel.addEventListener("animationend", handleAnimationEnd);
 }
 
 // Initialize MicroModal with custom callbacks
@@ -37,18 +41,31 @@ MicroModal.init({
 // Sticky filters on scroll
 window.addEventListener("DOMContentLoaded", () => {
   const filters = document.querySelector(".filters");
-  const filtersTop = filters.offsetTop;
-  const filtersBottom = filters.offsetTop + filters.offsetHeight;
+  if (!filters) return; // Error handling
 
-  // إضافة حدث التمرير
-  window.onscroll = () => {
+  const filtersTop = filters.offsetTop;
+  const filtersBottom = filtersTop + filters.offsetHeight;
+
+  // Throttle scroll event for performance
+  let isThrottled = false;
+
+  const handleScroll = () => {
+    if (isThrottled) return;
+    isThrottled = true;
+
     const scrollPosCur = window.scrollY;
     if (scrollPosCur > filtersBottom) {
       filters.classList.add("filters--sticky", "filters--visible");
     } else if (scrollPosCur < filtersTop) {
       filters.classList.remove("filters--sticky", "filters--visible");
     }
+
+    setTimeout(() => {
+      isThrottled = false;
+    }, 100); // Throttle time
   };
+
+  window.addEventListener("scroll", handleScroll);
 });
 
 // Favorite button functionality
@@ -58,6 +75,8 @@ window.addEventListener("DOMContentLoaded", () => {
 
   favoriteButtons.forEach((button) => {
     const event = button.closest(".event");
+    if (!event) return; // Error handling
+
     const eventTitle = event.querySelector(".event__title").textContent;
 
     button.onclick = () => {
@@ -76,11 +95,13 @@ window.addEventListener("DOMContentLoaded", () => {
 // Theme switcher with localStorage
 (() => {
   const themeButton = document.querySelector(".theme-switcher");
+  if (!themeButton) return; // Error handling
+
   const defaultTheme = "light";
   const darkTheme = "dark";
   let currentTheme = localStorage.getItem("theme") || defaultTheme;
 
-  // تطبيق الثيم المحفوظ عند التحميل
+  // Apply saved theme on load
   document.documentElement.classList.toggle(
     "theme-dark",
     currentTheme === darkTheme
@@ -94,8 +115,6 @@ window.addEventListener("DOMContentLoaded", () => {
     currentTheme = currentTheme === defaultTheme ? darkTheme : defaultTheme;
     document.documentElement.classList.toggle("theme-dark");
     themeButton.classList.toggle("theme-switcher--dark");
-    localStorage.setItem("theme", currentTheme); // حفظ الثيم في localStorage
+    localStorage.setItem("theme", currentTheme); // Save theme to localStorage
   };
 })();
-
-//
