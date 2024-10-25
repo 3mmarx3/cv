@@ -323,15 +323,11 @@ h6 {
 
 .sidepanel__container {
   position: relative;
-  display: grid;
-  grid-template:
-    "logo logo" auto
-    "menu menu" 1fr
-    "user switcher" auto / 1fr auto;
-  -webkit-column-gap: 1rem;
-  -moz-column-gap: 1rem;
-  column-gap: 1rem;
   padding: 3rem;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-around;
+  flex-direction: column;
 }
 
 .sidepanel__logo {
@@ -2226,7 +2222,7 @@ svg.size-6 {
   }
 
   main.main {
-    background: black;
+    background: var(--surface) !important;
   }
 }
 
@@ -2377,4 +2373,8 @@ svg.bi.bi-chat {
 
 * {
   text-transform: capitalize;
+}
+
+body {
+  background: var(--surface) !important;
 }
