@@ -463,13 +463,17 @@ h6 {
 /* --- user --- */
 
 .user {
-  display: grid;
-  grid-template:
-    "image name"
-    "image button" / auto 1fr;
-  gap: 0.25em 0.75em;
-  font-size: 0.875rem;
+  display: flex;
+
   line-height: 1.5;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user__name {
+  display: flex;
+  align-items: self-start;
+  flex-direction: column;
 }
 
 .user__image {
