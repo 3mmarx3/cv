@@ -1338,10 +1338,6 @@ body a {
   color: #000;
 }
 
-body {
-  background: #ceecf9;
-}
-
 /* lood */
 
 .loader {
@@ -2232,6 +2228,9 @@ svg.size-6 {
   main.main {
     background: black;
   }
+  button.btn.phone {
+    display: none;
+  }
 }
 
 /* .name {
@@ -2296,7 +2295,7 @@ svg.bi.bi-chat {
   border-radius: 50%;
   width: 85px;
   height: 85px;
-  border: 1px solid #deffde;
+  border: 5px solid white;
 }
 
 .d-flex {
