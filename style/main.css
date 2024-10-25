@@ -2228,9 +2228,6 @@ svg.size-6 {
   main.main {
     background: black;
   }
-  button.btn.phone {
-    display: none;
-  }
 }
 
 /* .name {
@@ -2273,13 +2270,31 @@ svg.bi.bi-chat {
 }
 
 .second {
-  display: flex;
   align-items: center;
   justify-content: space-between;
   background: #deffde;
   padding: 10px;
   border-radius: 10px;
   color: black !important;
+  position: relative;
+}
+.image {
+  display: none;
+}
+
+.second::before {
+  content: "";
+  width: 80px;
+  height: 80px;
+  background: black;
+  position: absolute;
+  right: -15px;
+  top: -30px;
+  border-radius: 50px;
+  border: 2px solid #deffde;
+  background-image: url(../img/3mmar.jpg);
+  background-position: center center;
+  background-size: cover;
 }
 
 .image {
@@ -2313,7 +2328,7 @@ svg.bi.bi-chat {
   border: 1px solid black;
   /* background-color: #ddffde; */
   /* color: white; */
-  padding: 5px 10px;
+  padding: 5px 15px;
   border-radius: 5px;
   cursor: pointer;
   margin-right: 5px;
@@ -2358,4 +2373,8 @@ svg.bi.bi-chat {
 .comments {
   margin: 20px 0;
   color: white;
+}
+
+* {
+  text-transform: capitalize;
 }
