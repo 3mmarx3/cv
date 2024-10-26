@@ -728,6 +728,7 @@ changeTheme(themes[0])
   --round-card: calc(var(--sz-action) / 2 + calc(var(--gap-action) / 2));
 
   width: var(--w-card);
+  height:25vh;
   border-radius: var(--round-card);
   position: relative;
   background-color: #ddffde;
@@ -834,11 +835,14 @@ changeTheme(themes[0])
 }
 
 .boxes {
-
-    display: flex;
-    flex-direction: row;
-    flex-direction: column;
-    margin-bottom: 2vh;
+  gap: 16px;
+  width: 100%;
+  position: relative;
+  z-index: 9;
+  height: var(--sz-img);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
 }
 .boxes .caption {
   display: flex;
@@ -904,7 +908,7 @@ changeTheme(themes[0])
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  border-radius: 130px;
+  border-radius: 30px;
   background: #161a1d !important;
 }
 
