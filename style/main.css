@@ -326,8 +326,9 @@ h6 {
   padding: 3rem;
   display: flex;
   /* align-items: center; */
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: column;
+  gap: 10px;
 }
 
 .sidepanel__logo {
@@ -1530,11 +1531,6 @@ header {
   .logo img {
     margin-left: 10px;
     width: 30px;
-    transition: all 0.5s ease;
-  }
-
-  .logo span {
-    font-size: 1.1rem;
     transition: all 0.5s ease;
   }
 
