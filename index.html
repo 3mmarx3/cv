@@ -600,7 +600,7 @@ changeTheme(themes[0])
                 </figcaption>
               </figure>
             
-              <div class="box-body">
+              <!-- <div class="box-body">
                 <div class="box-content">
                   <span class="img">
                     <svg
@@ -652,7 +652,7 @@ changeTheme(themes[0])
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
             
               <div data-title="Last seen" class="box-foot">
                 <figure class="box-foot-figure">
@@ -813,7 +813,7 @@ changeTheme(themes[0])
   --round-card: calc(var(--sz-action) / 2 + calc(var(--gap-action) / 2));
 
   width: var(--w-card);
-  height: var(--h-card);
+  height:25vh;
   border-radius: var(--round-card);
   position: relative;
   background-color: #ddffde;
@@ -984,7 +984,6 @@ changeTheme(themes[0])
 
 .box-foot-figure {
   font-weight: 400;
-  outline: 1px solid hsl(var(--black-muted), 0.3);
   width: max-content;
   border-radius: 9999px;
   display: flex;
@@ -995,6 +994,7 @@ changeTheme(themes[0])
   gap: 0.5rem;
   padding: 0.5rem;
   overflow: hidden;
+  border: 2px solid var(--surface) !important;
 }
 .box-foot-figure .img {
   transition: all 0.25s ease;
@@ -1045,6 +1045,8 @@ changeTheme(themes[0])
   max-width: var(--sz-toggle);
   transition: all 0.5s ease;
   color: hsl(var(--black-muted), 0.75);
+  background-color: var(--surface) !important;
+  color: hsl(var(--white-smoke));
 }
 .box-foot-action[aria-label="meets"] {
   background-color: var(--surface) !important;
