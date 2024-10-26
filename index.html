@@ -886,7 +886,7 @@ changeTheme(themes[0])
   border: none;
   outline: none;
   transition: all 0.5s ease;
-  background-color: hsl(var(--white-smoke));
+  background-color: #deffde;
   color: hsl(var(--black-muted));
   box-shadow:
     rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
@@ -900,6 +900,7 @@ changeTheme(themes[0])
 .corner .action svg {
   width: 32px;
   height: 32px;
+  color: var(--surface) !important;
 }
 .corner .action:hover svg {
   color: white;
@@ -1046,7 +1047,7 @@ changeTheme(themes[0])
   color: hsl(var(--black-muted), 0.75);
 }
 .box-foot-action[aria-label="meets"] {
-  background-color: hsl(var(--black-muted));
+  background-color: var(--surface) !important;
   color: hsl(var(--white-smoke));
 }
 .box-foot-action:hover {
