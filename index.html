@@ -51,7 +51,7 @@
 
 <div class="c-card">
   <button class="c-theme" id="themePicker"></button>
-  <div class="c-theme-grid" id="themeGrid"></div><a class="c-button" id="button">Cycle Theme</a>
+  <div class="c-theme-grid menu__link" id="themeGrid"></div><a class="c-button" id="button">Cycle Theme</a>
 </div>
 
 <style>
@@ -416,16 +416,20 @@ changeTheme(themes[0])
                   <li class="menu__item">
                     <a class="menu__link" href="https://3mmarx3.github.io/ID/">protfolio</a>
                   </li>
-                </ul>
-              </nav>
+
+                  <li class="menu__link">
 
               <div class="sidepanel__user user">
-                <img class="user__image" src="./img/3mmar.jpg" width="48" height="48" alt="" />
-                <div class="user__name">
-                  <span class="visually-hidden">Username: </span> Ammar Ahmed
-                  <button class="user__button">Sign out</button>
-
+               
+                <div class="bl">
+                  <img class="user__image" src="./img/3mmar.jpg" width="48" height="48" alt="" />
+                  <div class="user__name">
+                    <span class="visually-hidden">Username: </span> Ammar Ahmed
+                    <button class="user__button">Sign out</button>
+  
+                  </div>
                 </div>
+
                 <button class="sidepanel__theme-switcher theme-switcher theme-switcher--dark" type="button" aria-label="Switch to dark theme">
                   <svg class="theme-switcher__icon" width="16" height="16" viewBox="0 0 512 512" aria-hidden="true">
                     <path class="theme-switcher__icon-sun" d="M256 160c-52.9 0-96 43.1-96 96s43.1 96 96 96 96-43.1 96-96-43.1-96-96-96zm246.4 80.5l-94.7-47.3 33.5-100.4c4.5-13.6-8.4-26.5-21.9-21.9l-100.4 33.5-47.4-94.8c-6.4-12.8-24.6-12.8-31 0l-47.3 94.7L92.7 70.8c-13.6-4.5-26.5 8.4-21.9 21.9l33.5 100.4-94.7 47.4c-12.8 6.4-12.8 24.6 0 31l94.7 47.3-33.5 100.5c-4.5 13.6 8.4 26.5 21.9 21.9l100.4-33.5 47.3 94.7c6.4 12.8 24.6 12.8 31 0l47.3-94.7 100.4 33.5c13.6 4.5 26.5-8.4 21.9-21.9l-33.5-100.4 94.7-47.3c13-6.5 13-24.7.2-31.1zm-155.9 106c-49.9 49.9-131.1 49.9-181 0-49.9-49.9-49.9-131.1 0-181 49.9-49.9 131.1-49.9 181 0 49.9 49.9 49.9 131.1 0 181z">
@@ -436,6 +440,11 @@ changeTheme(themes[0])
                 </button>
               </div>
               
+                  </li>
+
+                </ul>
+              </nav>
+
           
             </div>
           </div>
@@ -583,13 +592,13 @@ changeTheme(themes[0])
                 <span class="img_me">
                   <style>
     .img_me {
-    width: 80px;
+      width: 105px;
     height: 80px;
-
     border-radius: 50px;
     background-image: url(./img/3mmar.jpg);
     background-position: center center;
     background-size: cover;
+    border: solid black 5px;
 }
                   </style>
              
@@ -599,61 +608,7 @@ changeTheme(themes[0])
                   <span class="as" title="Ammar Ahmed">Ammar Ahmed</span>
                 </figcaption>
               </figure>
-            
-              <!-- <div class="box-body">
-                <div class="box-content">
-                  <span class="img">
-                    <svg
-                      preserveAspectRatio="xMidYMid"
-                      viewBox="0 -22.5 256 256"
-                      height="800px"
-                      width="800px"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g>
-                        <polygon
-                          points="144.822496 105.321856 169.778926 133.848796 203.341343 155.294133 209.178931 105.50196 203.341343 56.8331137 169.136495 75.6715889"
-                          fill="#00832D"
-                        ></polygon>
-                        <path
-                          fill="#0066DA"
-                          d="M0.000557021739,150.659712 L0.000557021739,193.089915 C0.000557021739,202.77838 7.86384724,210.643527 17.5541688,210.643527 L59.9843714,210.643527 L68.7704609,178.585069 L59.9843714,150.659712 L30.8744153,141.873623 L0.000557021739,150.659712 Z"
-                        ></path>
-                        <polygon
-                          points="59.9838143 9.9475983e-14 0 59.9838143 30.875715 68.7494798 59.9838143 59.9838143 68.6102243 32.4390893"
-                          fill="#E94235"
-                        ></polygon>
-                        <polygon
-                          points="0.000557021739 150.679394 59.9843714 150.679394 59.9843714 59.9832573 0.000557021739 59.9832573"
-                          fill="#2684FC"
-                        ></polygon>
-                        <path
-                          fill="#00AC47"
-                          d="M241.658683,25.3977775 L203.341157,56.8342278 L203.341157,155.29339 L241.818362,186.852385 C247.577967,191.364261 256.003849,187.251584 256.003849,179.930462 L256.003849,32.1785888 C256.003849,24.7757699 247.377439,20.6835169 241.658683,25.3977775"
-                        ></path>
-                        <path
-                          fill="#00AC47"
-                          d="M144.822496,105.321856 L144.822496,150.659712 L59.9843714,150.659712 L59.9843714,210.643527 L185.787731,210.643527 C195.478053,210.643527 203.341343,202.77838 203.341343,193.089915 L203.341343,155.294133 L144.822496,105.321856 Z"
-                        ></path>
-                        <path
-                          fill="#FFBA00"
-                          d="M185.787731,0 L59.9843714,0 L59.9843714,59.9838143 L144.822496,59.9838143 L144.822496,105.32167 L203.341343,56.832928 L203.341343,17.5536117 C203.341343,7.86329022 195.478053,0 185.787731,0"
-                        ></path>
-                      </g>
-                    </svg>
-                  </span>
-                  <div class="caption">
-                    <p>Google Meet Call</p>
-                    <div>
-                      <p class="text-sm">
-                        <time class="font-semibold">28 03 2024</time> at
-                        <time class="font-semibold">2 pm</time>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div> -->
-            
+        
               <div data-title="Last seen" class="box-foot">
                 
                 <div class="box-foot-actions none_">
@@ -667,6 +622,8 @@ changeTheme(themes[0])
                   </button>
                 </div>
              
+                <div class="line_hr"></div>
+
                 
                 <div class="box-foot-actions">
                   <button type="button" aria-label="email" class="box-foot-action">
@@ -728,7 +685,9 @@ changeTheme(themes[0])
   --round-card: calc(var(--sz-action) / 2 + calc(var(--gap-action) / 2));
 
   width: var(--w-card);
-  height:25vh;
+
+  gap: 3vh;
+
   border-radius: var(--round-card);
   position: relative;
   background-color: #ddffde;
@@ -853,7 +812,6 @@ changeTheme(themes[0])
       calc(var(--sz-action) * var(--index-action)) -
       calc(var(--gap-action) * var(--index-action)) - var(--sz-img) - 16px
   );
-  margin-top: 18px;
 }
 .boxes .name {
   font-size: 16px;

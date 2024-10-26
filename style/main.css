@@ -2378,3 +2378,13 @@ svg.bi.bi-chat {
 body {
   background: var(--surface) !important;
 }
+
+.line_hr {
+  border: 1px #deffde solid;
+  width: 100%;
+}
+
+.bl {
+  display: flex;
+  gap: 10px;
+}
