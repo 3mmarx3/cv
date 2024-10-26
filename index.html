@@ -728,7 +728,6 @@ changeTheme(themes[0])
   --round-card: calc(var(--sz-action) / 2 + calc(var(--gap-action) / 2));
 
   width: var(--w-card);
-  height:25vh;
   border-radius: var(--round-card);
   position: relative;
   background-color: #ddffde;
@@ -835,14 +834,11 @@ changeTheme(themes[0])
 }
 
 .boxes {
-  gap: 16px;
-  width: 100%;
-  position: relative;
-  z-index: 9;
-  height: var(--sz-img);
-  display: flex;
-  align-items: center;
-  flex-direction: row;
+
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    margin-bottom: 2vh;
 }
 .boxes .caption {
   display: flex;
