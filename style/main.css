@@ -2367,9 +2367,9 @@ body {
   --sunrise-text-secondary: rgb(255, 255, 255);
   --sunrise-primary: rgb(32, 32, 32);
   --sunrise-text-inverse: #f3e8e5;
-  --light-bg: #f7f8f9;
+  --light-bg: #3a3a3a;
   --light-border: #f1f2f4;
-  --light-surface: #ffffff;
+  --light-surface: #3a3a3a;
   --light-text-primary: #091e42;
   --light-text-secondary: #626f86;
   --light-primary: #1d7afc;
@@ -2668,9 +2668,7 @@ div#themeGrid {
   background-color: #deffde;
   color: hsl(var(--black-muted));
 }
-.corner .action:hover {
-  background: hsl(var(--green-light));
-}
+
 .corner .action svg {
   width: 20px;
   height: 20px;
@@ -2830,7 +2828,6 @@ div#themeGrid {
 }
 .box-foot-action:hover {
   color: hsl(var(--black-muted));
-  background-color: hsl(var(--white-smoke), 0.5);
 }
 .box-foot-action svg {
   max-height: calc(var(--sz-toggle) * 0.65);
