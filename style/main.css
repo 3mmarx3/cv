@@ -2162,12 +2162,6 @@ svg.size-6 {
     background: transparent !important;
   }
 
-  body,
-  html {
-    font-family: sans-serif;
-    overflow: auto !important;
-    background: black;
-  }
   body::before {
     --size: 45px;
     --line: color-mix(in lch, canvasText, transparent 70%);
@@ -2759,7 +2753,7 @@ div#themeGrid {
   flex-direction: row;
   justify-content: space-between;
   border-radius: 130px;
-  background: #161a1d !important;
+  background: var(--surface) !important;
 }
 
 .box-foot-figure {
