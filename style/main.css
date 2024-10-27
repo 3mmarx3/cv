@@ -2754,6 +2754,7 @@ div#themeGrid {
   justify-content: space-between;
   border-radius: 130px;
   background: var(--surface) !important;
+  padding: 10px;
 }
 
 .box-foot-figure {
@@ -2803,9 +2804,7 @@ div#themeGrid {
   display: grid;
   grid-auto-flow: column;
 }
-.box-foot-actions {
-  padding: 10px;
-}
+
 .box-foot-action {
   cursor: pointer;
   border-radius: 9999px;
