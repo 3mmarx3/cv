@@ -67,16 +67,16 @@
   --sunset-bg: #151c19;
   --sunset-border: #424f4a;
   --sunset-surface: #2f3834;
-  --sunset-text-primary: #ecd2c5;
+  --sunset-text-primary: black;
   --sunset-text-secondary: #C0AB92;
   --sunset-primary: #C0AB92;
   --sunset-text-inverse: #151c19;
-  --sunrise-bg: #ecd2c5;
-  --sunrise-border: #d7c9c6;
-  --sunrise-surface: #f3e8e5;
-  --sunrise-text-primary: #4f2733;
-  --sunrise-text-secondary: #685844;
-  --sunrise-primary: #a04d66;
+  --sunrise-bg: black;
+  --sunrise-border: rgb(19, 19, 19);
+  --sunrise-surface: black;
+  --sunrise-text-primary: rgb(255, 255, 255);
+  --sunrise-text-secondary: rgb(255, 255, 255);
+  --sunrise-primary: rgb(32, 32, 32);
   --sunrise-text-inverse: #f3e8e5;
   --light-bg: #F7F8F9;
   --light-border: #F1F2F4;
@@ -598,7 +598,7 @@ changeTheme(themes[0])
     background-image: url(./img/3mmar.jpg);
     background-position: center center;
     background-size: cover;
-    border: solid black 5px;
+    border: solid var(--surface)  5px;
 }
                   </style>
              
@@ -628,6 +628,8 @@ changeTheme(themes[0])
                 <div class="box-foot-actions">
                   <button type="button" aria-label="email" class="box-foot-action">
                     <svg
+                    style="    color: black;
+    font-size: large;"
                       xmlns="http://www.w3.org/2000/svg"
                       width="1em"
                       height="1em"
@@ -775,11 +777,7 @@ changeTheme(themes[0])
   transition: all 0.5s ease;
   background-color: #deffde;
   color: hsl(var(--black-muted));
-  box-shadow:
-    rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
-    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px,
-    rgba(0, 0, 0, 0.07) 0px 1px 2px,
-    rgba(0, 0, 0, 0.07) 0px 2px 4px;
+ 
 }
 .corner .action:hover {
   background: hsl(var(--green-light));
