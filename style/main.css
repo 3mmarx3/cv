@@ -1628,8 +1628,6 @@ p.label {
   fill: white;
 }
 
-
-
 .results .results-list {
   display: flex;
   flex-direction: column;
@@ -1866,7 +1864,7 @@ p.label {
     text-align: right;
   }
 
-#status {
+  #status {
     position-anchor: --anchor;
     border: 0;
     padding: 0;
@@ -1961,7 +1959,6 @@ p.label {
     overflow: hidden;
     color: var(--color);
     border-radius: 50%;
-
   }
 
   dl {
