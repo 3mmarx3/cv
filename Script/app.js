@@ -276,35 +276,3 @@ themes.forEach((theme, i) => {
 changeTheme(themes[0]);
 
 //
-
-const divs = document.querySelectorAll('div[id^="div"]');
-const showAllButton = document.getElementById("showAll");
-
-// دالة لتبديل العناصر
-function showDiv(targetId) {
-  divs.forEach((div) => {
-    if (div.id === targetId) {
-      div.classList.remove("hidden");
-    } else {
-      div.classList.add("hidden");
-    }
-  });
-}
-
-// إضافة الأحداث للأزرار
-document.querySelectorAll("button[data-target]").forEach((button) => {
-  button.addEventListener("click", function () {
-    const targetId = this.getAttribute("data-target");
-    showDiv(targetId);
-  });
-});
-
-// إظهار جميع العناصر عند الضغط على زر "عرض الكل"
-showAllButton.addEventListener("click", function () {
-  divs.forEach((div) => div.classList.remove("hidden"));
-});
-
-// إظهار جميع العناصر عند تحميل الصفحة
-window.onload = function () {
-  divs.forEach((div) => div.classList.remove("hidden"));
-};
