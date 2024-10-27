@@ -1622,27 +1622,13 @@ p.label {
   gap: 12px;
   transition: all 0.2s cubic-bezier(0.15, 0.83, 0.66, 1);
 }
-/* 
-.results .entry:hover {
-  background-color: #f5f8fe;
-} */
-
-/* .results .results-list .entry:hover .icon {
-  background-color: #1763fa;
-} */
 
 .results .results-list .entry:hover .icon svg path,
 .results .results-list .entry:hover .icon svg circle {
   fill: white;
 }
 
-/* .results .results-list .entry:hover label {
-  color: #1763fa;
-}
 
-.results .results-list .entry:hover span {
-  color: #7ba0eb;
-} */
 
 .results .results-list {
   display: flex;
@@ -1712,7 +1698,6 @@ p.label {
   gap: 25px;
   margin-top: 5vh;
   padding: 0 7px;
-  /* background: #f8f8f8; */
   bottom: 0;
   width: 100%;
 }
@@ -1835,7 +1820,6 @@ p.label {
     white-space: nowrap;
   }
 
-  /* Handles the CTA button */
   [popovertarget="status"] {
     position: fixed;
     width: 44px;
@@ -1859,7 +1843,6 @@ p.label {
     }
   }
 
-  /* The actual popover content inside unfiltered content */
   dl {
     display: grid;
     position: absolute;
@@ -1883,9 +1866,7 @@ p.label {
     text-align: right;
   }
 
-  /* Popover styling */
-  #status {
-    /* default anchor to use */
+#status {
     position-anchor: --anchor;
     border: 0;
     padding: 0;
@@ -1900,9 +1881,6 @@ p.label {
     line-height: 1;
   }
 
-  /* Animation stuff... */
-  /* Popover uses a display transition of 2x on the speed */
-  /* Use a container query to get some translation in */
   #status {
     transition-property: display, overlay;
     transition-duration: calc(var(--speed) * 3);
@@ -1926,7 +1904,6 @@ p.label {
     filter: url(#goo);
   }
 
-  /* Both blobs do the same thing, cover the popover area */
   .blob {
     position: absolute;
     inset: 0;
@@ -1979,16 +1956,12 @@ p.label {
   }
 
   .unfiltered .content {
-    /* display: none; */
     --radius: 18px;
-    /* background: transparent; */
     background: var(--bg);
-    /* border-radius: 12px; */
     overflow: hidden;
     color: var(--color);
     border-radius: 50%;
-    /* background: transparent;
-    overflow: hidden; */
+
   }
 
   dl {
@@ -2103,7 +2076,6 @@ p.label {
     width: 75%;
   }
 
-  /* Utilities */
   .sr-only {
     position: absolute;
     width: 1px;
@@ -2227,10 +2199,6 @@ svg.size-6 {
   }
 }
 
-/* .name {
-  color: white;
-} */
-
 svg.bi.bi-chat {
   color: black !important;
   fill: black;
@@ -2242,8 +2210,6 @@ svg.bi.bi-chat {
 
 .card_C {
   border-radius: 10px;
-  /* background: #dcffdc40;
-  padding: 19px; */
 }
 
 .heading {
@@ -2323,8 +2289,6 @@ svg.bi.bi-chat {
 
 .btn {
   border: 1px solid black;
-  /* background-color: #ddffde; */
-  /* color: white; */
   padding: 5px 15px;
   border-radius: 5px;
   cursor: pointer;
