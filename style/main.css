@@ -2558,7 +2558,7 @@ div#themeGrid {
 }
 
 .img_me {
-  width: 105px;
+  width: 80px;
   height: 80px;
   border-radius: 50px;
   background-image: url(../img/3mmar.jpg);
@@ -2699,7 +2699,6 @@ div#themeGrid {
 .boxes .caption {
   display: flex;
   flex-direction: column;
-  width: 100%;
   max-width: calc(
     var(--w-card) - calc(var(--p-card) * 2) -
       calc(var(--sz-action) * var(--index-action)) -
