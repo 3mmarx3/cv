@@ -2,10 +2,11 @@
 function offcanvasAnimation(type, modal, trigger, className, animationName) {
   const body = document.body;
   const app = document.querySelector(".app");
-  const panel = modal.querySelector(".sidepanel");
-  const burger = trigger.querySelector(".burger");
+  const panel = modal?.querySelector(".sidepanel");
+  const burger = trigger?.querySelector(".burger");
 
-  // Set open state
+  if (!panel || !burger) return; // Error handling
+
   if (type === "open") {
     body.classList.add("page__body--offcanvas-open");
     app.classList.add("app--offcanvas-open");
@@ -17,8 +18,8 @@ function offcanvasAnimation(type, modal, trigger, className, animationName) {
   const handleAnimationEnd = (event) => {
     if (event.animationName === animationName) {
       panel.classList.remove(className);
-      panel.removeEventListener("animationend", handleAnimationEnd); // Clean up
-      // Set close state
+      panel.removeEventListener("animationend", handleAnimationEnd);
+
       if (type === "close") {
         body.classList.remove("page__body--offcanvas-open");
         app.classList.remove("app--offcanvas-open");
@@ -41,12 +42,10 @@ MicroModal.init({
 // Sticky filters on scroll
 window.addEventListener("DOMContentLoaded", () => {
   const filters = document.querySelector(".filters");
-  if (!filters) return; // Error handling
+  if (!filters) return;
 
   const filtersTop = filters.offsetTop;
   const filtersBottom = filtersTop + filters.offsetHeight;
-
-  // Throttle scroll event for performance
   let isThrottled = false;
 
   const handleScroll = () => {
@@ -62,7 +61,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     setTimeout(() => {
       isThrottled = false;
-    }, 100); // Throttle time
+    }, 100);
   };
 
   window.addEventListener("scroll", handleScroll);
@@ -75,9 +74,10 @@ window.addEventListener("DOMContentLoaded", () => {
 
   favoriteButtons.forEach((button) => {
     const event = button.closest(".event");
-    if (!event) return; // Error handling
+    if (!event) return;
 
-    const eventTitle = event.querySelector(".event__title").textContent;
+    const eventTitle =
+      event.querySelector(".event__title")?.textContent || "event";
 
     button.onclick = () => {
       button.classList.toggle("favorite-button--active");
@@ -95,13 +95,12 @@ window.addEventListener("DOMContentLoaded", () => {
 // Theme switcher with localStorage
 (() => {
   const themeButton = document.querySelector(".theme-switcher");
-  if (!themeButton) return; // Error handling
+  if (!themeButton) return;
 
   const defaultTheme = "light";
   const darkTheme = "dark";
   let currentTheme = localStorage.getItem("theme") || defaultTheme;
 
-  // Apply saved theme on load
   document.documentElement.classList.toggle(
     "theme-dark",
     currentTheme === darkTheme
@@ -115,12 +114,6 @@ window.addEventListener("DOMContentLoaded", () => {
     currentTheme = currentTheme === defaultTheme ? darkTheme : defaultTheme;
     document.documentElement.classList.toggle("theme-dark");
     themeButton.classList.toggle("theme-switcher--dark");
-    localStorage.setItem("theme", currentTheme); // Save theme to localStorage
+    localStorage.setItem("theme", currentTheme);
   };
 })();
-
-
-// 
-
-
-
