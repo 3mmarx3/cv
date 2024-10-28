@@ -584,7 +584,7 @@ h6 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: white;
+  color: ;
   z-index: 99999999999;
 }
 
@@ -1454,7 +1454,7 @@ header {
 }
 
 .logo span {
-  color: white;
+  color: var(--text-secondary) !important;
   font-size: 1.5rem;
   transition: all 0.5 ease;
 }
@@ -2367,11 +2367,11 @@ body {
   --sunrise-text-secondary: rgb(255, 255, 255);
   --sunrise-primary: rgb(32, 32, 32);
   --sunrise-text-inverse: #f3e8e5;
-  --light-bg: #626f86;
+  --light-bg: #ffffff;
   --light-border: #f1f2f4;
-  --light-surface: #3a3a3a;
-  --light-text-primary: #091e42;
-  --light-text-secondary: #626f86;
+  --light-surface: #ffffff;
+  --light-text-primary: black;
+  --light-text-secondary: black;
   --light-primary: #1d7afc;
   --light-text-inverse: #ffffff;
   --bg: var(--dark-bg);
@@ -2396,7 +2396,12 @@ html {
 
 body {
   background: var(--bg);
-  color: var(--text-secondary);
+  color: var(--text-secondary) !important;
+}
+
+svg,
+i.bi {
+  color: var(--text-secondary) !important;
 }
 
 .c-card {
