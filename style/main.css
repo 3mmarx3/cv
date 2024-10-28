@@ -2107,10 +2107,6 @@ button#cta {
   padding: 15px;
 }
 
-svg {
-  color: white;
-}
-
 svg.size-6 {
   color: black;
 }
@@ -2677,7 +2673,7 @@ div#themeGrid {
 .corner .action svg {
   width: 20px;
   height: 20px;
-  color: var(--surface) !important;
+  /* color: var(--surface) !important; */
 }
 .corner .action:hover svg {
   color: white;
