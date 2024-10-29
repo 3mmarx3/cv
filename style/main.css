@@ -2325,10 +2325,6 @@ svg.bi.bi-chat {
   text-transform: capitalize;
 }
 
-body {
-  background: var(--surface) !important;
-}
-
 .line_hr {
   border: 1px #deffde solid;
   width: 100%;
@@ -2389,7 +2385,6 @@ html {
 }
 
 body {
-  background: var(--bg);
   color: var(--text-secondary) !important;
 }
 
@@ -2885,4 +2880,8 @@ figcaption.caption {
 }
 .text-sm {
   font-size: 14px;
+}
+
+body {
+  background: var(--surface) !important;
 }
