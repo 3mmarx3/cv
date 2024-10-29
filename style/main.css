@@ -2085,7 +2085,6 @@ p.label {
 }
 
 button#cta {
-  background: white;
   color: black;
 }
 
@@ -2103,6 +2102,8 @@ button#cta {
   justify-content: center;
   text-align: center;
   padding: 15px;
+  background: white;
+  color: black;
 }
 
 svg.size-6 {
