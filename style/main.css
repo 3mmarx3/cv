@@ -2346,14 +2346,14 @@ body {
   --dark-border: #22272b;
   --dark-surface: #161a1d;
   --dark-text-primary: #dee4ea;
-  --dark-text-secondary: #738496;
+  --dark-text-secondary: white;
   --dark-primary: #1d7afc;
   --dark-text-inverse: #ffffff;
   --sunset-bg: #151c19;
   --sunset-border: #424f4a;
   --sunset-surface: #2f3834;
   --sunset-text-primary: black;
-  --sunset-text-secondary: #c0ab92;
+  --sunset-text-secondary: #ffffff;
   --sunset-primary: #c0ab92;
   --sunset-text-inverse: #151c19;
   --sunrise-bg: black;
@@ -2673,10 +2673,14 @@ div#themeGrid {
 .corner .action svg {
   width: 20px;
   height: 20px;
-  /* color: var(--surface) !important; */
+  color: black !important;
 }
 .corner .action:hover svg {
   color: white;
+}
+
+figcaption.caption {
+  color: black;
 }
 
 .boxes {
